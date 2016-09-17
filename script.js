@@ -5,10 +5,10 @@ var mouseOverCount = 0;
 $( ".out" )
   .mouseover(function() {
     mouseOverCount += 1;
-    $( this ).find( "span" ).text( "mouse over x " + mouseOverCount );
+    $( this ).find( "p" ).text( "x " + mouseOverCount );
   })
   .mouseout(function() {
-    $( this ).find( "span" ).text( "mouse out" );
+    $( this ).find( "p" ).text( "mouse out" );
   });
 
 // make div draggable

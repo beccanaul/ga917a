@@ -3,22 +3,31 @@ body{
   font-size: 17px;
 }
 
-div.out {
-    width: 40%;
-    height: 120px;
+.out {
+    width: 150px;
+    height: 150px;
     margin: 0 15px;
-    background-color: #d6edfc;
+    border: solid 1px #000;
     float: left;
+    position: relative
   }
-  div.in {
-    width: 60%;
-    height: 60%;
-    background-color: #fc0;
-    margin: 10px auto;
-  }
+
+.circle {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin: 0 15px;
+  border: solid 1px red;
+  float: left;
+  position: relative;
+  color: red;
+}
+
   p {
-    line-height: 1em;
     margin: 0;
-    padding: 0;
-    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
   }
